@@ -81,10 +81,10 @@ class NothingPhoneAnimation(private val model: NothingPhoneModel, private val gl
 
                 frame = when (model) {
                     NothingPhoneModel.NOTHING_PHONE_1 -> builder.buildChannel(Glyph.Code_20111.D1_1).build()
-                    NothingPhoneModel.NOTHING_PHONE_2 -> builder.buildChannel(Glyph.Code_22111.C1_1).build() // Using C1 for Phone 2
+                    NothingPhoneModel.NOTHING_PHONE_2 -> builder.buildChannel(Glyph.Code_22111.C1_1).build()
                     NothingPhoneModel.NOTHING_PHONE_2A, NothingPhoneModel.NOTHING_PHONE_2A_PLUS -> builder.buildChannel(
                         Glyph.Code_23111.C_1).build()
-                    NothingPhoneModel.NOTHING_PHONE_3 -> builder.buildChannel(Glyph.Code_24111.A_1).build() // Using A_1 for Phone 3
+                    NothingPhoneModel.NOTHING_PHONE_3 -> builder.buildChannel(Glyph.Code_24111.A_1).build()
                 }
 
                 gm.displayProgress(frame, progress)
